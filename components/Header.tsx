@@ -1,3 +1,5 @@
+"use client"
+
 import { ShoppingCart, CircleUserRound, } from "lucide-react"
 import NavButton from "@/components/NavButton"
 import SearchInput from "@/components/SearchInput"
