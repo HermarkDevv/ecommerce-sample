@@ -1,8 +1,13 @@
 import { ShoppingCart, CircleUserRound, } from "lucide-react"
 import NavButton from "@/components/NavButton"
 import SearchInput from "@/components/SearchInput"
+import { useState } from "react"
 
 export default function Header() {
+
+    const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const [isSearchOpen, setIsSearchOpen] = useState(false)
+
     return (
         <div className="flex flex-row justify-between items-center bg-white px-16 py-4 text-blue-900">
             <div className="font-bold text-2xl">

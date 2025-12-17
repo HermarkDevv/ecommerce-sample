@@ -56,18 +56,18 @@ const PaymentMethodsImages = [
 export default function Footer() {
     return (
         <footer className=" bg-blue-100">
-            <div className="flex flex-row justify-items-start gap-30 px-20 py-5">
+            <div className="flex flex-col md:flex-row justify-items-start gap-10 px-6 py-8 md:gap-30 md:px-20 md:py-5">
                 {/* Brand + Socials */}
                 <div className="max-w-xl space-y-4">
                     <div>
-                        <h1 className="text-2xl font-bold">HERMARK.CO</h1>
-                        <p className="text-xl text-muted-foreground">
-                            We have clothes that suits your style and which <br />
+                        <h1 className="text-xl lg:text-2xl font-bold">HERMARK.CO</h1>
+                        <p className="text-base lg:text-xl max-w-110 text-muted-foreground">
+                            We have clothes that suits your style and which
                             you’re proud to wear. From women to men.
                         </p>
                     </div>
 
-                    <div className="flex gap-4">
+                    <div className="flex flex-wrap gap-4">
                         {socialLinks.map(({ icon, label }) => (
                             <div key={label} className="p-4 rounded-full bg-white">
                                 <SocialMediaButton
@@ -83,23 +83,25 @@ export default function Footer() {
                 </div>
 
                 {/* Footer Columns */}
-                {footerLinks.map(({ title, items }) => (
-                    <div key={title} className="space-y-2">
-                        <p className="text-xl font-semibold">{title}</p>
+                <div className="grid grid-cols-2 gap-10 md:gap-25 sm:grid-cols-3 md:grid-cols-4">
+                    {footerLinks.map(({ title, items }) => (
+                        <div key={title} className="space-y-2">
+                            <p className="text-base lg:text-xl font-semibold">{title}</p>
 
-                        <ul className="space-y-1 text-xl text-muted-foreground">
-                            {items.map((item) => (
-                                <li key={item} className="hover:text-foreground cursor-pointer">
-                                    {item}
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                ))}
+                            <ul className="space-y-1 text-base lg:text-xl text-muted-foreground">
+                                {items.map((item) => (
+                                    <li key={item} className="hover:text-foreground cursor-pointer">
+                                        {item}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    ))}
+                </div>
             </div>
             <hr className="my-4 border-t border-gray-300 mx-20" />
-            <div className="flex flex-row justify-between items-center px-40 pt-3 pb-30">
-                <p className="text-xl">Hermark.co &copy; {new Date().getFullYear()}, All rights reserved.</p>
+            <div className="flex flex-col gap-4 md:flex-row md:justify-between items-center px-4  md:px-40 pt-3 pb-30">
+                <p className="text-base md:text-xl">Hermark.co &copy; {new Date().getFullYear()}, All rights reserved.</p>
                 <div className="flex flex-row gap-4">
                     {PaymentMethodsImages.map(({ src, alt }) => (
                         <div key={alt} className="bg-white p-2 rounded-md flex items-center justify-center">
@@ -108,6 +110,7 @@ export default function Footer() {
                     ))}
                 </div>
             </div>
+
 
         </footer>
     )
