@@ -46,11 +46,11 @@ const footerLinks = [
 ]
 
 const PaymentMethodsImages = [
-    { src: "/images/visa.png", alt: "Visa Card" },
-    { src: "/images/master.png", alt: "Mastercard" },
-    { src: "/images/paypal.png", alt: "PayPal" },
-    { src: "/images/pay.png", alt: "Apple Pay" },
-    { src: "/images/gpay.png", alt: "Google pay" },
+    { src: "/images/paymentMethodsLogo/visa.png", alt: "Visa Card" },
+    { src: "/images/paymentMethodsLogo/master.png", alt: "Mastercard" },
+    { src: "/images/paymentMethodsLogo/paypal.png", alt: "PayPal" },
+    { src: "/images/paymentMethodsLogo/pay.png", alt: "Apple Pay" },
+    { src: "/images/paymentMethodsLogo/gpay.png", alt: "Google pay" },
 ]
 
 export default function Footer() {
@@ -100,7 +100,7 @@ export default function Footer() {
                 </div>
             </div>
             <hr className="my-4 border-t border-gray-300 mx-20" />
-            <div className="flex flex-col gap-4 md:flex-row md:justify-between items-center px-4  md:px-40 pt-3 pb-30">
+            <div className="flex flex-col gap-4 lg:flex-row lg:justify-between items-center px-4  lg:px-40 pt-3 pb-30">
                 <p className="text-base md:text-xl">Hermark.co &copy; {new Date().getFullYear()}, All rights reserved.</p>
                 <div className="flex flex-row gap-4">
                     {PaymentMethodsImages.map(({ src, alt }) => (
