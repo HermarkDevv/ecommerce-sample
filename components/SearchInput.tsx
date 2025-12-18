@@ -43,7 +43,7 @@ export default function SearchInput() {
                 placeholder="Search for products..."
                 onBlur={handleBlur}
                 className={`bg-transparent border-none shadow-none focus-visible:ring-0 focus-visible:ring-offset-0 placeholder:text-base transition-all duration-200 md:w-64
-                            ${isActive ? "w-48 block" : "hidden md:block"}
+                            ${isActive ? "w-24 block" : "hidden md:block"}
                 `}
             />
         </div>

@@ -11,7 +11,7 @@ const stats = [
 export default function HeroSection() {
     return (
         <div className="flex flex-col lg:flex-row items-center bg-blue-100">
-            <div className="flex-1 mt-5 mb-5 ml-10">
+            <div className="flex-1 my-5 mx-10">
                 <h3 className="text-3xl lg:text-5xl max-w-2xl font-bold">FIND CLOTHES THAT MATCHES YOUR STYLE</h3>
                 <p className="text-base lg:text-xl max-w-2xl text-muted-foreground py-6">Browse through our diverse range of meticulously crafted garments, designed to bring out
                     your individuality and cater to your sense of style.
