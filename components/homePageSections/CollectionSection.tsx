@@ -26,12 +26,14 @@ function ProductCard({ cloth }: { cloth: Product }) {
 }
 
 export default function CollectionSection({ Title }: CollectionProps) {
+
     const filteredProducts = clothDetails.filter((product) =>
         product.collection.includes(Title)
     )
+
     return (
         <section className="flex flex-col mt-18 mb-12">
-            <h2 className="text-3xl lg:text-6xl font-bold lg:font-extrabold px-4 pb-14 uppercase flex justify-center items-center tracking-wide">{Title}</h2>
+            <h2 className="text-3xl lg:text-5xl font-bold lg:font-extrabold px-4 pb-14 uppercase flex justify-center items-center tracking-wide">{Title}</h2>
 
             {/* 🔹 MOBILE: horizontal scroll (all items) */}
             <div className="lg:hidden flex gap-6 pl-6 overflow-x-auto snap-x snap-mandatory no-scrollbar">
