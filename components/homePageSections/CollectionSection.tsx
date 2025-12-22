@@ -10,7 +10,7 @@ type CollectionProps = {
 
 function ProductCard({ cloth }: { cloth: Product }) {
     return (
-        <div key={cloth.id} className="shrink-0 snap-center w-50 md:w-60 lg:w-100 ">
+        <div key={cloth.id} className="shrink-0 snap-center w-50 md:w-60 lg:w-full ">
             <Image
                 src={cloth.image}
                 alt={cloth.title}
