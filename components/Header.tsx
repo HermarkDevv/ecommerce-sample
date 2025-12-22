@@ -17,6 +17,7 @@ import Link from "next/link"
 export default function Header() {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const [isActive, setIsActive] = useState(false)
 
     return (
         <div className="flex flex-row justify-between items-center gap-x-3 bg-white px-2 lg:px-16 py-4 text-blue-900">
@@ -49,9 +50,12 @@ export default function Header() {
             </nav>
 
             <div className="flex flex-row items-center gap-4">
-                <SearchInput />
-                <NavButton icon={ShoppingCart} label="Cart" />
-                <NavButton icon={CircleUserRound} label="User" />
+                <SearchInput onActiveChange={setIsActive} />
+
+                <div className={` md:flex items-center gap-4 ${isActive ? "hidden" : "flex md:flex"} `}>
+                    <NavButton icon={ShoppingCart} label="Cart" />
+                    <NavButton icon={CircleUserRound} label="User" />
+                </div>
             </div>
 
         </div>

@@ -1,4 +1,4 @@
-import ShopNowButton from '@/components/ShopNowButton'
+import ButtonWithText from '@/components/ButtonWithText'
 import Image from 'next/image'
 import React from 'react'
 
@@ -17,7 +17,7 @@ export default function HeroSection() {
                     your individuality and cater to your sense of style.
                 </p>
                 <div className="flex flex-col items-center lg:items-start">
-                    <ShopNowButton className="px-20 lg:px-8 lg:py-6" />
+                    <ButtonWithText className="px-20 lg:px-8 lg:py-6" title="Shop Now" />
                 </div>
 
                 <div className="grid grid-cols-2 gap-y-8 gap-x-6 pt-6 place-items-center lg:place-items-start lg:grid-cols-[max-content_12px_max-content_12px_max-content] md:gap-x-4">

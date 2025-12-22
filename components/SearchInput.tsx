@@ -5,18 +5,24 @@ import { Input } from "@/components/ui/input"
 import { Search } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
-export default function SearchInput() {
+interface SearchInputProps {
+    onActiveChange?: (active: boolean) => void
+}
+
+export default function SearchInput({ onActiveChange }: SearchInputProps) {
 
     const [isActive, setIsActive] = useState(false)
     const inputRef = useRef<HTMLInputElement>(null)
 
     const handleOpen = () => {
         setIsActive(true)
+        onActiveChange?.(true)
         setTimeout(() => inputRef.current?.focus(), 0)
     }
 
     const handleBlur = () => {
         setIsActive(false)
+        onActiveChange?.(false)
     }
 
     return (

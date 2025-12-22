@@ -12,7 +12,7 @@ export default function DesignersLogoSection() {
     return (
         <div className="flex flex-wrap justify-between gap-6 bg-black px-20 py-5">
             {DesignerImages.map(({ src, alt, width, height }) => (
-                <div key={alt} className=" flex items-center justify-center">
+                <div key={alt} className={`flex items-center justify-center w-24 h-6 md:w-auto md:h-auto ${alt === "Zara" ? "scale-65 md:scale-100" : ""}`}>
                     <Image key={alt} src={src} alt={alt} width={width} height={height} />
                 </div>
             ))}

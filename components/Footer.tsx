@@ -5,7 +5,10 @@ import {
     FaFacebook,
     FaInstagram,
     FaGithub,
+    FaEnvelope
 } from "react-icons/fa6"
+import { Input } from "@/components/ui/input"
+import ButtonWithText from "./ButtonWithText"
 
 
 const socialLinks = [
@@ -56,6 +59,20 @@ const PaymentMethodsImages = [
 export default function Footer() {
     return (
         <footer className=" bg-blue-100">
+            <div className="bg-black flex flex-col lg:flex-row gap-4 justify-between px-5 lg:px-30 py-7 lg:py-15 rounded-4xl mx-5 lg:mx-20">
+                <p className=" text-2xl lg:text-5xl font-bold text-white w-75 lg:w-150 ">STAY UPTO DATE ABOUT OUR LATEST OFFERS</p>
+                <div>
+                    <div className="bg-white rounded-4xl px-5 py-2 flex flex-row items-center">
+                        <FaEnvelope className="text-gray-200 text-2xl inline-block" />
+                        <Input
+                            type="email"
+                            placeholder="Enter your email address"
+                            className="bg-white w-full border-none shadow-none focus-visible:ring-0 focus-visible:ring-offset-0 placeholder:text-base transition-all duration-200 px-4 py-2 rounded-4xl"
+                        />
+                    </div>
+                    <ButtonWithText title="Subscribe to Newsletter" className="bg-white text-black font-semibold w-full px-10 lg:px-18 hover:bg-white mt-4" />
+                </div>
+            </div>
             <div className="flex flex-col md:flex-row justify-items-start gap-10 px-6 py-8 md:gap-30 md:px-20 md:py-5">
                 {/* Brand + Socials */}
                 <div className="max-w-xl space-y-4">

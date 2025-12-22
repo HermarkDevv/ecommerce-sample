@@ -1,0 +1,224 @@
+[
+    {
+        "id": 1,
+        "title": "Men's Printed Jogging Pants",
+        "price": 45.99,
+        "description": "Premium comfort meets modern style with these breathable jogging pants featuring unique graphic prints.",
+        "image": "/images/productImages/Men's printed jogging pants.avif",
+        "rating": {
+            "rate": 4.5,
+            "count": 120
+        },
+        "tags": [
+            "men",
+            "pants",
+            "joggers",
+            "printed",
+            "bottoms"
+        ],
+        "collection": [
+            "new arrivals",
+            "casual",
+            "sportwear"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "2024 Summer New Men's Embroidered Polo Neck",
+        "price": 32.50,
+        "description": "Stay cool this summer with our latest embroidered polo, designed for a sharp look and maximum breathability.",
+        "image": "/images/productImages/2024 Summer New Men's Embroidered Polo Neck.avif",
+        "rating": {
+            "rate": 4.8,
+            "count": 85
+        },
+        "tags": [
+            "men",
+            "summer",
+            "polo",
+            "embroidered",
+            "tops"
+        ],
+        "collection": [
+            "new arrivals",
+            "casual"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "2025 Autumn and Winter Korean Style Jacket",
+        "price": 89.95,
+        "description": "A trendy Korean-style outer layer perfect for the colder months, offering both warmth and a slim silhouette.",
+        "image": "/images/productImages/2025 autumn and winter new Korean style.avif",
+        "rating": {
+            "rate": 4.2,
+            "count": 210
+        },
+        "tags": [
+            "men",
+            "autumn",
+            "winter",
+            "jacket",
+            "korean-style",
+            "outerwear"
+        ],
+        "collection": [
+            "new arrivals",
+            "casual"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Funny Seagull Graphic T-Shirt",
+        "price": 19.99,
+        "description": "Add some humor to your day with this soft cotton tee featuring a quirky seagull illustration.",
+        "image": "/images/productImages/Funny T Shirts Seagull Men's.avif",
+        "rating": {
+            "rate": 4.7,
+            "count": 340
+        },
+        "tags": [
+            "men",
+            "t-shirt",
+            "graphic",
+            "funny",
+            "casual"
+        ],
+        "collection": [
+            "new arrivals",
+            "casual"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Men's Novelty 3D Crew Neck T-Shirt",
+        "price": 24.00,
+        "description": "Make a statement with this vibrant 3D print shirt, made from moisture-wicking fabric for all-day comfort.",
+        "image": "/images/productImages/Men'S Novelty 3D Crew Neck T-Shirt.avif",
+        "rating": {
+            "rate": 3.9,
+            "count": 56
+        },
+        "tags": [
+            "men",
+            "t-shirt",
+            "3d-print",
+            "novelty",
+            "tops"
+        ],
+        "collection": [
+            "top selling",
+            "casual"
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Geometric Line Print Long-Sleeved Shirt",
+        "price": 38.00,
+        "description": "A sophisticated geometric line pattern makes this long-sleeved shirt a perfect choice for smart-casual events.",
+        "image": "/images/productImages/Men's trendy geometric line print long-sleeved shirt.avif",
+        "rating": {
+            "rate": 4.4,
+            "count": 92
+        },
+        "tags": [
+            "men",
+            "shirt",
+            "long-sleeve",
+            "geometric",
+            "formal"
+        ],
+        "collection": [
+            "top selling",
+            "Coorperate"
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Men's Tropical Short Sleeve Shirt Set",
+        "price": 55.00,
+        "description": "Vacation ready! This matching set features a tropical print that brings those island vibes wherever you go.",
+        "image": "/images/productImages/Men's Tropical Short Sleeve Printed Shirt Sets.avif",
+        "rating": {
+            "rate": 4.6,
+            "count": 150
+        },
+        "tags": [
+            "men",
+            "summer",
+            "tropical",
+            "set",
+            "vacation"
+        ],
+        "collection": [
+            "top selling",
+            "casual"
+        ]
+    },
+    {
+        "id": 8,
+        "title": "Classic Style Men's Slim Denim Shorts",
+        "price": 42.99,
+        "description": "Durable, classic denim cut in a slim fit. A versatile staple for any warm-weather wardrobe.",
+        "image": "/images/productImages/Model Classic Style Men's Slim Denim shorts.avif",
+        "rating": {
+            "rate": 4.1,
+            "count": 275
+        },
+        "tags": [
+            "men",
+            "shorts",
+            "denim",
+            "slim-fit",
+            "bottoms"
+        ],
+        "collection": [
+            "top selling",
+            "casual",
+            "Denim"
+        ]
+    },
+    {
+        "id": 9,
+        "title": "Autumn Graphic Hooded Sweatshirt",
+        "price": 49.50,
+        "description": "Heavyweight long-sleeve hoodie featuring high-quality autumn graphics and a soft fleece lining.",
+        "image": "/images/productImages/New Autumn Men Graphic Sweatshirts Hoodied Long Sleeve.avif",
+        "rating": {
+            "rate": 4.9,
+            "count": 410
+        },
+        "tags": [
+            "men",
+            "autumn",
+            "hoodie",
+            "sweatshirt",
+            "outerwear"
+        ],
+        "collection": [
+            "top selling",
+            "casual"
+        ]
+    },
+    {
+        "id": 10,
+        "title": "Simple Fashion Ancient Style T-Shirt",
+        "price": 28.00,
+        "description": "A minimalist design inspired by ancient patterns, combining tradition with modern streetwear.",
+        "image": "/images/productImages/Simple Fashion Ancient Style T Shirts.avif",
+        "rating": {
+            "rate": 4.3,
+            "count": 68
+        },
+        "tags": [
+            "men",
+            "t-shirt",
+            "minimalist",
+            "fashion",
+            "tops"
+        ],
+        "collection": [
+            "casual"
+        ]
+    }
+]
