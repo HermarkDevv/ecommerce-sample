@@ -17,8 +17,8 @@ const Card = ({ title, image, className }: CardProps) => (
 export default function SectionCollage() {
     return (
         <section className="pb-10">
-            <div className="bg-blue-100 lg:px-auto py-10 lg:py-20 rounded-4xl mx-3 lg:mx-15 xl:mx-60">
-                <h2 className="text-center text-3xl lg:text-5xl font-extrabold mb-12">
+            <div className="bg-blue-100 lg:px-auto py-10 lg:py-20 rounded-4xl mx-6 lg:mx-15 xl:mx-60">
+                <h2 className="text-center text-2xl lg:text-5xl font-extrabold mb-12">
                     BROWSE BY DRESS STYLE
                 </h2>
 
