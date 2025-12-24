@@ -59,18 +59,20 @@ const PaymentMethodsImages = [
 export default function Footer() {
     return (
         <footer>
-            <div className="bg-black flex flex-col md:flex-row gap-4 justify-between px-5 lg:px-30 py-7 lg:py-15 rounded-4xl mx-5 -mb-30 relative z-100 lg:mx-20">
-                <p className=" text-2xl lg:text-5xl font-bold text-white w-full md:w-150 ">STAY UPTO DATE ABOUT OUR LATEST OFFERS</p>
-                <div>
-                    <div className="bg-white rounded-4xl px-5 py-2 flex flex-row items-center">
-                        <FaEnvelope className="text-gray-200 text-2xl inline-block" />
-                        <Input
-                            type="email"
-                            placeholder="Enter your email address"
-                            className="bg-white w-full border-none shadow-none focus-visible:ring-0 focus-visible:ring-offset-0 placeholder:text-base transition-all duration-200 px-4 py-2 rounded-4xl"
-                        />
+            <div className="bg-zinc-50">
+                <div className="bg-black flex flex-col md:flex-row gap-4 justify-between px-5 lg:px-30 py-7 lg:py-15 rounded-4xl mx-5 -mb-30 relative z-100 lg:mx-20">
+                    <p className=" text-2xl lg:text-5xl font-bold text-white w-full md:w-150 ">STAY UPTO DATE ABOUT OUR LATEST OFFERS</p>
+                    <div>
+                        <div className="bg-white rounded-4xl px-5 py-2 flex flex-row items-center">
+                            <FaEnvelope className="text-gray-200 text-2xl inline-block" />
+                            <Input
+                                type="email"
+                                placeholder="Enter your email address"
+                                className="bg-white w-full border-none shadow-none focus-visible:ring-0 focus-visible:ring-offset-0 placeholder:text-base transition-all duration-200 px-4 py-2 rounded-4xl"
+                            />
+                        </div>
+                        <ButtonWithText title="Subscribe to Newsletter" className="bg-white text-black font-semibold w-full px-10 lg:px-18 hover:bg-white mt-4" />
                     </div>
-                    <ButtonWithText title="Subscribe to Newsletter" className="bg-white text-black font-semibold w-full px-10 lg:px-18 hover:bg-white mt-4" />
                 </div>
             </div>
 
