@@ -13,3 +13,9 @@ export type Product = {
     tags: string[]
     collection: string[]
 }
+
+export type Review = {
+    rate: number
+    name: string
+    reviewDetails: string
+}
