@@ -23,7 +23,7 @@ export default function CustomerReviewSection() {
     return (
         <section className="py-20 px-10">
             <div className="flex items-center justify-between mb-8">
-                <h2 className="text-5xl font-bold">
+                <h2 className="text-2xl lg:text-5xl font-bold">
                     OUR HAPPY CUSTOMERS
                 </h2>
 

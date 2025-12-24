@@ -9,7 +9,7 @@ type ReviewCardProps = {
 
 export default function ReviewCard({ rate, name, reviewDetails }: ReviewCardProps) {
     return (
-        <div className="py-10 px-10 rounded-4xl w-90 shrink-0 snap-start border border-muted-foreground">
+        <div className="py-5 lg:py-10 px-5 lg:px-10 rounded-4xl w-70 lg:w-90 shrink-0 snap-start border border-muted-foreground">
             <div className="pb-5">
                 <Rating rate={rate} />
             </div>
