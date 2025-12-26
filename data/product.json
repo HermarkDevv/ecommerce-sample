@@ -4,7 +4,26 @@
         "title": "Men's Printed Jogging Pants",
         "price": 45.99,
         "description": "Premium comfort meets modern style with these breathable jogging pants featuring unique graphic prints.",
-        "image": "/images/productImages/Men's printed jogging pants.avif",
+        "images": [
+            "/images/productImages/Men's printed jogging pants.avif"
+        ],
+        "colorOptions": [
+            {
+                "id": 101,
+                "name": "Black",
+                "tailwindClass": "bg-gray-900"
+            },
+            {
+                "id": 102,
+                "name": "Charcoal",
+                "tailwindClass": "bg-slate-700"
+            },
+            {
+                "id": 103,
+                "name": "Navy",
+                "tailwindClass": "bg-blue-900"
+            }
+        ],
         "rating": {
             "rate": 4.5,
             "count": 120
@@ -27,7 +46,21 @@
         "title": "2024 Summer New Men's Embroidered Polo Neck",
         "price": 32.50,
         "description": "Stay cool this summer with our latest embroidered polo, designed for a sharp look and maximum breathability.",
-        "image": "/images/productImages/2024 Summer New Men's Embroidered Polo Neck.avif",
+        "images": [
+            "/images/productImages/2024 Summer New Men's Embroidered Polo Neck.avif"
+        ],
+        "colorOptions": [
+            {
+                "id": 201,
+                "name": "White",
+                "tailwindClass": "bg-slate-50"
+            },
+            {
+                "id": 202,
+                "name": "Sky Blue",
+                "tailwindClass": "bg-sky-400"
+            }
+        ],
         "rating": {
             "rate": 4.8,
             "count": 85
@@ -49,7 +82,31 @@
         "title": "2025 Autumn and Winter Korean Style Jacket",
         "price": 89.95,
         "description": "A trendy Korean-style outer layer perfect for the colder months, offering both warmth and a slim silhouette.",
-        "image": "/images/productImages/2025 autumn and winter new Korean style.avif",
+        "images": [
+            "/images/productImages/2025 autumn and winter new Korean style.avif"
+        ],
+        "colorOptions": [
+            {
+                "id": 301,
+                "name": "Beige",
+                "tailwindClass": "bg-orange-100"
+            },
+            {
+                "id": 302,
+                "name": "Black",
+                "tailwindClass": "bg-gray-900"
+            },
+            {
+                "id": 303,
+                "name": "Olive",
+                "tailwindClass": "bg-olive-600"
+            },
+            {
+                "id": 304,
+                "name": "Camel",
+                "tailwindClass": "bg-yellow-700"
+            }
+        ],
         "rating": {
             "rate": 4.2,
             "count": 210
@@ -72,7 +129,21 @@
         "title": "Funny Seagull Graphic T-Shirt",
         "price": 19.99,
         "description": "Add some humor to your day with this soft cotton tee featuring a quirky seagull illustration.",
-        "image": "/images/productImages/Funny T Shirts Seagull Men's.avif",
+        "images": [
+            "/images/productImages/Funny T Shirts Seagull Men's.avif"
+        ],
+        "colorOptions": [
+            {
+                "id": 401,
+                "name": "White",
+                "tailwindClass": "bg-white"
+            },
+            {
+                "id": 402,
+                "name": "Heather Gray",
+                "tailwindClass": "bg-gray-400"
+            }
+        ],
         "rating": {
             "rate": 4.7,
             "count": 340
@@ -94,7 +165,36 @@
         "title": "Men's Novelty 3D Crew Neck T-Shirt",
         "price": 24.00,
         "description": "Make a statement with this vibrant 3D print shirt, made from moisture-wicking fabric for all-day comfort.",
-        "image": "/images/productImages/Men'S Novelty 3D Crew Neck T-Shirt.avif",
+        "images": [
+            "/images/productImages/Men'S Novelty 3D Crew Neck T-Shirt.avif"
+        ],
+        "colorOptions": [
+            {
+                "id": 501,
+                "name": "Abstract Blue",
+                "tailwindClass": "bg-blue-500"
+            },
+            {
+                "id": 502,
+                "name": "Neon Green",
+                "tailwindClass": "bg-lime-400"
+            },
+            {
+                "id": 503,
+                "name": "Sunset Orange",
+                "tailwindClass": "bg-orange-500"
+            },
+            {
+                "id": 504,
+                "name": "Purple Haze",
+                "tailwindClass": "bg-purple-600"
+            },
+            {
+                "id": 505,
+                "name": "Cyber Black",
+                "tailwindClass": "bg-black"
+            }
+        ],
         "rating": {
             "rate": 3.9,
             "count": 56
@@ -116,7 +216,26 @@
         "title": "Geometric Line Print Long-Sleeved Shirt",
         "price": 38.00,
         "description": "A sophisticated geometric line pattern makes this long-sleeved shirt a perfect choice for smart-casual events.",
-        "image": "/images/productImages/Men's trendy geometric line print long-sleeved shirt.avif",
+        "images": [
+            "/images/productImages/Men's trendy geometric line print long-sleeved shirt.avif"
+        ],
+        "colorOptions": [
+            {
+                "id": 601,
+                "name": "Modern White",
+                "tailwindClass": "bg-slate-50"
+            },
+            {
+                "id": 602,
+                "name": "Deep Blue",
+                "tailwindClass": "bg-blue-800"
+            },
+            {
+                "id": 603,
+                "name": "Minimalist Gray",
+                "tailwindClass": "bg-gray-300"
+            }
+        ],
         "rating": {
             "rate": 4.4,
             "count": 92
@@ -138,7 +257,31 @@
         "title": "Men's Tropical Short Sleeve Shirt Set",
         "price": 55.00,
         "description": "Vacation ready! This matching set features a tropical print that brings those island vibes wherever you go.",
-        "image": "/images/productImages/Men's Tropical Short Sleeve Printed Shirt Sets.avif",
+        "images": [
+            "/images/productImages/Men's Tropical Short Sleeve Printed Shirt Sets.avif"
+        ],
+        "colorOptions": [
+            {
+                "id": 701,
+                "name": "Palm Green",
+                "tailwindClass": "bg-emerald-500"
+            },
+            {
+                "id": 702,
+                "name": "Ocean Blue",
+                "tailwindClass": "bg-cyan-500"
+            },
+            {
+                "id": 703,
+                "name": "Coral Pink",
+                "tailwindClass": "bg-pink-400"
+            },
+            {
+                "id": 704,
+                "name": "Sand",
+                "tailwindClass": "bg-amber-100"
+            }
+        ],
         "rating": {
             "rate": 4.6,
             "count": 150
@@ -160,7 +303,21 @@
         "title": "Classic Style Men's Slim Denim Shorts",
         "price": 42.99,
         "description": "Durable, classic denim cut in a slim fit. A versatile staple for any warm-weather wardrobe.",
-        "image": "/images/productImages/Model Classic Style Men's Slim Denim shorts.avif",
+        "images": [
+            "/images/productImages/Model Classic Style Men's Slim Denim shorts.avif"
+        ],
+        "colorOptions": [
+            {
+                "id": 801,
+                "name": "Light Wash",
+                "tailwindClass": "bg-blue-200"
+            },
+            {
+                "id": 802,
+                "name": "Indigo",
+                "tailwindClass": "bg-blue-700"
+            }
+        ],
         "rating": {
             "rate": 4.1,
             "count": 275
@@ -183,7 +340,26 @@
         "title": "Autumn Graphic Hooded Sweatshirt",
         "price": 49.50,
         "description": "Heavyweight long-sleeve hoodie featuring high-quality autumn graphics and a soft fleece lining.",
-        "image": "/images/productImages/New Autumn Men Graphic Sweatshirts Hoodied Long Sleeve.avif",
+        "images": [
+            "/images/productImages/New Autumn Men Graphic Sweatshirts Hoodied Long Sleeve.avif"
+        ],
+        "colorOptions": [
+            {
+                "id": 901,
+                "name": "Forest Green",
+                "tailwindClass": "bg-green-800"
+            },
+            {
+                "id": 902,
+                "name": "Mustard",
+                "tailwindClass": "bg-yellow-600"
+            },
+            {
+                "id": 903,
+                "name": "Burgundy",
+                "tailwindClass": "bg-red-900"
+            }
+        ],
         "rating": {
             "rate": 4.9,
             "count": 410
@@ -205,7 +381,31 @@
         "title": "Simple Fashion Ancient Style T-Shirt",
         "price": 28.00,
         "description": "A minimalist design inspired by ancient patterns, combining tradition with modern streetwear.",
-        "image": "/images/productImages/Simple Fashion Ancient Style T Shirts.avif",
+        "images": [
+            "/images/productImages/Simple Fashion Ancient Style T Shirts.avif"
+        ],
+        "colorOptions": [
+            {
+                "id": 1001,
+                "name": "Parchment",
+                "tailwindClass": "bg-stone-200"
+            },
+            {
+                "id": 1002,
+                "name": "Ink Black",
+                "tailwindClass": "bg-zinc-900"
+            },
+            {
+                "id": 1003,
+                "name": "Slate",
+                "tailwindClass": "bg-slate-500"
+            },
+            {
+                "id": 1004,
+                "name": "Terracotta",
+                "tailwindClass": "bg-orange-700"
+            }
+        ],
         "rating": {
             "rate": 4.3,
             "count": 68

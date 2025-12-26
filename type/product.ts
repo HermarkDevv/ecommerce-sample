@@ -3,12 +3,19 @@ export type Rating = {
     count: number
 }
 
+export type ColorOption = {
+    id: number;
+    name: string;
+    tailwindClass: string;
+};
+
 export type Product = {
     id: number
     title: string
     price: number
     description: string
-    image: string
+    images: string[]
+    colorOptions: ColorOption[]
     rating: Rating
     tags: string[]
     collection: string[]
