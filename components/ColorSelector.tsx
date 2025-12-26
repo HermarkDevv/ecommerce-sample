@@ -11,7 +11,7 @@ export default function ColorSelector({ colorOptions }: Prop) {
 
     return (
         <div>
-            <p className="text-xl font-medium mb-6">Select Colors</p>
+            <p className="text-xl font-medium mb-4">Select Colors</p>
 
             <div className="flex flex-row gap-6">
                 {colorOptions.map((option) => (
@@ -19,7 +19,7 @@ export default function ColorSelector({ colorOptions }: Prop) {
                         key={option.id}
                         onClick={() => setSelectedColor(option.name)}
                         aria-label={`Select ${option.name} color`}
-                        className={`w-8 h-8 rounded-full cursor-pointer transition-all ${option.tailwindClass} ring-offset-2
+                        className={`w-8 h-8 rounded-full cursor-pointer transition-all border border-gray-300 ${option.tailwindClass} ring-offset-2
                                 ${selectedColor === option.name
                                 ? "ring-2 ring-blue-500 scale-110"
                                 : "hover:ring-2 hover:ring-gray-300"

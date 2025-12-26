@@ -14,7 +14,7 @@ type Props = {
 
 export default function ProductDetailsColumn({ Title, RatingFigure, RatingCount, Price, Description, colorOptions }: Props) {
     return (
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-3">
 
             <h1 className="text-4xl font-bold">
                 {Title}
@@ -55,7 +55,7 @@ export default function ProductDetailsColumn({ Title, RatingFigure, RatingCount,
 }
 
 const Divider = () => (
-    <div className="h-px bg-border my-2" />
+    <div className="h-px bg-border my-1" />
 )
 
 
