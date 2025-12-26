@@ -18,7 +18,7 @@ export default async function page({ params }: Props) {
     }
 
     return (
-        <section className="bg-zinc-50 mx-auto px-10 py-10">
+        <section className="bg-zinc-50 mx-auto px-10 pt-10 pb-50">
 
             <p className="text-sm text-muted-foreground mb-6">
                 Home <span className="mx-2">›</span> Details
