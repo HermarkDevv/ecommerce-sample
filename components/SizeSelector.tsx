@@ -1,10 +1,10 @@
-"use client"
+type Props = {
+    value: string
+    onChange: (size: string) => void
+}
 
-import { useState } from 'react'
-
-export default function SizeSelector() {
+export default function SizeSelector({ value, onChange }: Props) {
     const sizes = ["Small", "Medium", "Large", "X-Large"]
-    const [selectedSize, setSelectedSize] = useState(sizes[0])
 
     return (
         <div>
@@ -13,9 +13,9 @@ export default function SizeSelector() {
                 {sizes.map((size) => (
                     <button
                         key={size}
-                        onClick={() => setSelectedSize(size)}
+                        onClick={() => onChange(size)}
                         className={`px-3 py-1 text-xl rounded-full bg-blue-100 cursor-pointer hover:bg-black hover:text-white transition
-                            ${selectedSize === size
+                            ${value === size
                                 ? "ring-2 ring-black scale-110"
                                 : "hover:ring-2 hover:ring-gray-300"
                             }`}

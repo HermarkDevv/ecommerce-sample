@@ -1,54 +1,59 @@
+"use client"
+
+import { useState } from "react"
 import Rating from "@/components/Rating"
 import ColorSelector from "@/components/ColorSelector"
 import SizeSelector from "@/components/SizeSelector"
-import { ColorOption } from "@/type/product"
+import QuantitySelector from "@/components/productPageComponents/QuantitySelector"
+import AddToCartButton from "@/components/productPageComponents/AddToCart"
+import type { Product } from "@/type/product"
 
 type Props = {
-    Title: string,
-    RatingFigure: number,
-    RatingCount?: number,
-    Price: number,
-    Description: string,
-    colorOptions: ColorOption[]
+    prod: Product,
 }
 
-export default function ProductDetailsColumn({ Title, RatingFigure, RatingCount, Price, Description, colorOptions }: Props) {
+export default function ProductDetailsColumn({ prod }: Props) {
+
+    const [selectedColor, setSelectedColor] = useState(prod.colorOptions[0].name)
+    const [selectedSize, setSelectedSize] = useState("Small")
+    const [quantity, setQuantity] = useState(1)
+
     return (
         <div className="flex flex-col gap-3">
 
             <h1 className="text-4xl font-bold">
-                {Title}
+                {prod.title}
             </h1>
 
-            <Rating rate={RatingFigure} count={RatingCount} />
+            <Rating rate={prod.rating.rate} count={prod.rating.count} />
 
             <div className="flex items-center gap-4">
-                <span className="text-3xl font-bold">${Price}</span>
+                <span className="text-3xl font-bold">${prod.price}</span>
 
             </div>
 
             <p className="text-muted-foreground leading-relaxed">
-                {Description}
+                {prod.description}
             </p>
 
             <Divider />
 
             {/* Colors */}
-            <ColorSelector colorOptions={colorOptions} />
+            <ColorSelector colorOptions={prod.colorOptions}
+                value={selectedColor}
+                onChange={setSelectedColor} />
 
             <Divider />
 
             {/* Sizes */}
-            <SizeSelector />
+            <SizeSelector value={selectedSize} onChange={setSelectedSize} />
 
             <Divider />
 
             {/* Quantity + Add to cart */}
             <div className="flex gap-4">
-                <QuantitySelector />
-                <button className="flex-1 bg-black text-white rounded-full py-4 font-semibold">
-                    Add to Cart
-                </button>
+                <QuantitySelector quantity={quantity} onChange={setQuantity} />
+                <AddToCartButton prod={prod} selectedSize={selectedSize} selectedColor={selectedColor} quantity={quantity} />
             </div>
         </div>
     )
@@ -57,14 +62,3 @@ export default function ProductDetailsColumn({ Title, RatingFigure, RatingCount,
 const Divider = () => (
     <div className="h-px bg-border my-1" />
 )
-
-
-function QuantitySelector() {
-    return (
-        <div className="flex items-center gap-6 bg-blue-100 rounded-full px-6">
-            <button className="text-xl">−</button>
-            <span className="font-medium">1</span>
-            <button className="text-xl">+</button>
-        </div>
-    )
-}

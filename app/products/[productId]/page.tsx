@@ -2,6 +2,7 @@ import MainProductImage from '@/components/productPageComponents/MainProductImag
 import ProductDetailsColumn from '@/components/productPageComponents/ProductDetailsColumn'
 import ThumbnailColumn from '@/components/productPageComponents/ThumbnailColumn'
 import product from '@/data/product.json'
+import Link from 'next/link'
 
 type Props = {
     params: Promise<{ productId: string }>
@@ -21,7 +22,7 @@ export default async function page({ params }: Props) {
         <section className="bg-zinc-50 mx-auto px-10 pt-10 pb-50">
 
             <p className="text-sm text-muted-foreground mb-6">
-                Home <span className="mx-2">›</span> Details
+                <Link href="/">Home</Link> <span className="mx-2">›</span> <strong>Details</strong>
             </p>
 
             <div className="flex flex-col lg:flex-row justify-between gap-10">
@@ -38,7 +39,7 @@ export default async function page({ params }: Props) {
                 </div>
 
                 {/* Product details */}
-                <ProductDetailsColumn Title={prod.title} RatingFigure={prod.rating.rate} RatingCount={prod.rating.count} Price={prod.price} Description={prod.description} colorOptions={prod.colorOptions} />
+                <ProductDetailsColumn prod={prod} />
             </div>
 
         </section>
