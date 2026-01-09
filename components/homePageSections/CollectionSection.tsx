@@ -1,11 +1,7 @@
-import Image from "next/image"
-import Link from "next/link"
-
 import clothDetails from "@/data/product.json"
-import Rating from "@/components/Rating"
 import ButtonWithText from "@/components/ButtonWithText"
-import type { Product } from "@/type/product"
 import ProductCard from "@/components/ProductCard"
+import { slugify } from "@/lib/slugify"
 
 type CollectionProps = {
     Title: string;
@@ -36,7 +32,7 @@ export default function CollectionSection({ Title }: CollectionProps) {
             </div>
 
             <div className="flex justify-center mt-10">
-                <ButtonWithText title="View All" className="bg-white text-black font-semibold border border-black px-18 hover:text-white" />
+                <ButtonWithText title="View All" href={`/collection/${slugify(Title)}`} className="bg-white text-black font-semibold border border-black px-18 cursor-pointer hover:text-white" />
             </div>
         </section>
     )

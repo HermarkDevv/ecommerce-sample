@@ -65,7 +65,7 @@ export default function CartPage() {
                                     </h3>
 
                                     <p className="text-sm text-muted-foreground mt-1">
-                                        Size: {item.size} · Color: {item.color}
+                                        Size: {item.size} <span className="pl-4"> Color: {item.color}</span>
                                     </p>
 
                                     <p className="font-bold text-lg mt-2">
