@@ -25,7 +25,7 @@ export default async function SearchPage({ searchParams }: Props) {
             ) : (
                 <div className="grid grid-cols-2 gap-4 sm:gap-14 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                     {results.map((product) => (
-                        <ProductCard key={product.id} cloth={product} />
+                        <ProductCard key={product.id} cloth={product} className="w-full" />
                     ))}
                 </div>
             )}
