@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useRef } from "react"
+import { useRouter } from "next/navigation"
 import { Input } from "@/components/ui/input"
 import { Search } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -10,48 +11,64 @@ interface SearchInputProps {
 }
 
 export default function SearchInput({ onActiveChange }: SearchInputProps) {
-
     const [isActive, setIsActive] = useState(false)
+    const [query, setQuery] = useState("")
     const inputRef = useRef<HTMLInputElement>(null)
+    const router = useRouter()
 
-    const handleOpen = () => {
+    const openSearch = () => {
         setIsActive(true)
         onActiveChange?.(true)
-        setTimeout(() => inputRef.current?.focus(), 0)
+        requestAnimationFrame(() => inputRef.current?.focus())
     }
 
-    const handleBlur = () => {
+    const closeSearch = () => {
         setIsActive(false)
+        setQuery("")
         onActiveChange?.(false)
     }
 
+    const submitSearch = () => {
+        if (!query.trim()) return
+        router.push(`/search?q=${encodeURIComponent(query.trim())}`)
+        closeSearch()
+    }
+
     return (
-        <div className="flex flex-row justify-items-start gap-4 rounded-full px-4 py-1 bg-blue-100">
+        <form
+            onSubmit={(e) => {
+                e.preventDefault()
+                submitSearch()
+            }}
+            className="flex items-center gap-3 rounded-full px-4 py-1 bg-blue-100"
+        >
+            {/* Search button */}
             <Button
+                type="button"
                 variant="ghost"
                 size="icon"
                 aria-label="Search"
-                title="Search"
-                onClick={handleOpen}
-                className={`
-        md:flex
-                    ${isActive ? "hidden md:flex" : "flex"}
-                `}
+                onClick={isActive ? submitSearch : openSearch}
+                className={`${isActive ? "hidden md:flex" : "flex"}`}
                 asChild
             >
-                <Search className="h-6 w-6 my-2" />
+                <Search className="h-6 w-6" />
             </Button>
 
-            {/* Search Input */}
+            {/* Search input */}
             <Input
                 ref={inputRef}
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
                 type="text"
                 placeholder="Search for products..."
-                onBlur={handleBlur}
-                className={`bg-transparent border-none shadow-none focus-visible:ring-0 focus-visible:ring-offset-0 placeholder:text-base transition-all duration-200 md:w-64
-                            ${isActive ? "w-24 block" : "hidden md:block"}
+                className={`
+                 bg-transparent border-none shadow-none focus-visible:ring-0 focus-visible:ring-offset-0
+                 placeholder:text-base md:placeholder:text-xl transition-all duration-200 md:w-64 text-base md:text-xl
+                 ${isActive ? "w-28 block" : "hidden md:block"}
                 `}
             />
-        </div>
+        </form>
     )
 }
+
