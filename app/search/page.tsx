@@ -13,7 +13,7 @@ export default async function SearchPage({ searchParams }: Props) {
     const results = searchProducts(products, query)
 
     return (
-        <section className="max-w-7xl mx-auto px-6 py-10">
+        <section className="bg-zinc-50 mx-auto px-4 pb-20 pt-10 sm:px-6 lg:px-30">
             <h1 className="text-3xl font-bold mb-8">
                 Search results for “{query}”
             </h1>
@@ -23,7 +23,7 @@ export default async function SearchPage({ searchParams }: Props) {
                     No products found.
                 </p>
             ) : (
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <div className="grid grid-cols-2 gap-4 sm:gap-14 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                     {results.map((product) => (
                         <ProductCard key={product.id} cloth={product} />
                     ))}
