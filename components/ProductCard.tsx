@@ -21,7 +21,7 @@ export default function ProductCard({ cloth, className }: Props) {
                 />
                 <h3 className="text-base lg:text-lg font-semibold line-clamp-1 min-h-5 w-50 lg:w-80">{cloth.title}</h3>
                 <Rating rate={cloth.rating.rate} count={cloth.rating.count} />
-                <p className="text-gray-900 font-bold text-lg">${cloth.price}</p>
+                <p className="text-gray-900 font-bold text-lg">₦{cloth.price}</p>
             </Link>
         </div>
     )

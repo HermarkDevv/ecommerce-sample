@@ -1,11 +1,19 @@
 "use client"
 
+import Link from "next/link"
+import { useRouter } from "next/navigation"
 import Image from "next/image"
 import { Trash2, Minus, Plus } from "lucide-react"
+
 import { useCartStore } from "@/store/cartStore"
-import Link from "next/link"
+import { useHydrated } from "@/hooks/useHydrated"
+
 
 export default function CartPage() {
+
+    const router = useRouter()
+
+
     const {
         items,
         removeItem,
@@ -17,6 +25,12 @@ export default function CartPage() {
         (sum, item) => sum + item.price * item.quantity,
         0
     )
+
+    const hydrated = useHydrated()
+
+    if (!hydrated) {
+        return <div className="py-20 text-center">Loading checkout…</div>
+    }
 
     if (items.length === 0) {
         return (
@@ -69,7 +83,7 @@ export default function CartPage() {
                                     </p>
 
                                     <p className="font-bold text-lg mt-2">
-                                        ${item.price.toFixed(2)}
+                                        ₦{item.price.toFixed(2)}
                                     </p>
                                 </div>
 
@@ -125,7 +139,7 @@ export default function CartPage() {
 
                     <div className="flex justify-between mb-4">
                         <span>Subtotal</span>
-                        <span>${subtotal.toFixed(2)}</span>
+                        <span>₦{subtotal.toFixed(2)}</span>
                     </div>
 
                     <div className="flex justify-between mb-4">
@@ -137,12 +151,15 @@ export default function CartPage() {
 
                     <div className="flex justify-between text-lg font-bold mb-6">
                         <span>Total</span>
-                        <span>${subtotal.toFixed(2)}</span>
+                        <span>₦{subtotal.toFixed(2)}</span>
                     </div>
 
-                    <button className="w-full bg-black text-white rounded-full py-4 font-semibold hover:bg-black/90 cursor-pointer">
-                        Checkout
-                    </button>
+                    <Link
+                        href="/checkout"
+                        className="w-full block text-center bg-black text-white rounded-full
+                                    py-4 font-semibold hover:bg-black/90 cursor-pointer">
+                        Proceed to Checkout
+                    </Link>
 
                     <button
                         onClick={clearCart}
